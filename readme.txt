@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: harshitpeer, rishigangoly
 Donate link: http://www.wpdudes.com
-Tags: feedback, poll, wpdudes, wordpress, dudes, techydudes, harshit, rishi 
+Tags: feedback, poll, wpdudes, wordpress, dudes, techydudes, harshit, rishi, survey, rating, anonymous survey, vote, voting
 Requires at least: 3.0.1
-Tested up to: 3.4
+Tested up to: 4.1
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,11 +22,34 @@ Features
 
 == Installation ==
 
-1. Goto your WP Dashboard and goto Plugins Menu and click on "ADD NEW" button.
-2. Now, you can either search for "WPDudes Survey" or if you have zip, then click on "UPLOAD PLUGIN" button.
-3. After that, click on install and active option.
+= Option 1 =
+
+* Within your WordPress admin area, navigate to "Plugins".
+* Click the "Add New" link near the top of your screen.
+* Click the "Upload" link.
+* Click the browse button and navigate to wherever you downloaded the zip file to, select the zip file
+* Click the "Install Now" button
+* Click "Activate Plugin"
+
+= Option 2 =
+
+* Extract the zip file
+* Upload (ftp) the resulting `wpdudes-survey` folder to your `/wp-content/plugins/` directory.
+* Activate "WPDudes Survey" through the "Plugins" menu in WordPress
 
 == Frequently Asked Questions ==
+
+= How to create a survey? =
+
+After installing the Plugin, you can see a "WPDudes Survey" in your WordPress Admin panel on the left sidebar menu. Click on that, and click on the "Create Survey Link". Enter the details of the Survey and WoHo you are done!
+
+= How to check results of the survey? =
+
+To view the results, you have to wait till the appropriated amount of users submitted their feedback. Since this is completely anonymous survey, even admin cannot view results before appropriated percentage of submissions are done.
+
+= How to delete a survey? =
+
+In order to delete a survey, you just have to click on the big red button named as DELETE on the listing of the surveys.
 
 = I don't have wordpress installed, what should I do? =
 
