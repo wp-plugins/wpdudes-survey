@@ -3,7 +3,7 @@
 * Plugin Name: WPDudes Survey
 * Plugin URI: http://www.wpdudes.com/plugins/wpdudes-survey
 * Description: A voting tool for the members or employees of a group, club, community or organisation (eg. HR) to provide internal feedback anonymously.
-* Version: 1.0.0
+* Version: 1.0.1
 * Author: WPDudes
 * Author URI: http://www.wpdudes.com/
 **/
