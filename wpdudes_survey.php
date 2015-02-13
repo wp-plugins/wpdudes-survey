@@ -46,8 +46,8 @@ register_activation_hook(__FILE__, 'plugin_wpdudes_survey_activation');
 
 //Following code will create admin menu
 function wpdudes_create_survey() {
-    add_menu_page( 'WPDudes Survey', 'WPDudes Survey', 'manage_options', 'wpdudes_survey/view_wpdudes_survey.php', '', '', 6 );
-    add_submenu_page('wpdudes_survey/view_wpdudes_survey.php','Create Survey','Create Survey','manage_options', __FILE__.'wpdudes_create_survey_page','wpdudes_create_survey_page');
+    add_menu_page( 'WPDudes Survey', 'WPDudes Survey', 'manage_options', 'wpdudes-survey/view_wpdudes_survey.php', '', '', 6 );
+    add_submenu_page('wpdudes-survey/view_wpdudes_survey.php','Create Survey','Create Survey','manage_options', __FILE__.'wpdudes_create_survey_page','wpdudes_create_survey_page');
 }
 
 add_action('admin_menu', 'wpdudes_create_survey');
