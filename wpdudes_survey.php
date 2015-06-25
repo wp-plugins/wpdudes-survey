@@ -3,7 +3,7 @@
 * Plugin Name: WPDudes Survey
 * Plugin URI: http://www.wpdudes.com/plugins/wpdudes-survey
 * Description: A voting tool for the members or employees of a group, club, community or organisation (eg. HR) to provide internal feedback anonymously.
-* Version: 1.0.2
+* Version: 1.0.3
 * Author: WPDudes
 * Author URI: http://www.wpdudes.com/
 **/
@@ -69,7 +69,7 @@ if(isset($_POST['wpdudes_survey_title'])) {
     	$wpdudes_survey_percentage_result = 50;
     }
 	if(($wpdudes_survey_percentage_result > 100) OR ($wpdudes_survey_percentage_result < 0)) {
-    	$error = "Percentage cannot be greater than 100 or less than 0";
+    	$error = "Percentage cannot be more than 100 or less than 0";
     }
     $wpdudes_survey_desc = addslashes($_POST['wpdudes_survey_desc']);
     $wpdudes_survey_names = filter_input(INPUT_POST, 'wpdudes_survey_names', FILTER_SANITIZE_STRING);
@@ -246,10 +246,11 @@ if(isset($_POST['wpdudes_survey_title'])) {
         echo "<div class='success'>Survey successfully created. <a href='".admin_url()."admin.php?page=wpdudes_survey/view_wpdudes_survey.php'>Click here</a> to view it</div>";
         $_POST = array();
         return;
-    }
+    } else {
+		echo "<div class='error'>". $error ."</div>";
+	}
 }
 ?>
-<?php if($error!="") { ?> <div class="error"><?php echo $error; ?></div> <?php } ?>
 <?php
 //This code will create the create survey page
 function wpdudes_create_survey_page() {
@@ -550,7 +551,7 @@ function voting_function() {
 			$Test->drawRoundedRectangle(5,5,375,195,5,230,230,230);  
 			  
 			// Draw the pie chart  
-			$Test->setFontProperties($contentdir."/plugins/wpdudes_survey/Fonts/tahoma.ttf",8);  
+			$Test->setFontProperties($contentdir."/plugins/wpdudes-survey/Fonts/tahoma.ttf",8);  
 			$Test->drawPieGraph($DataSet->GetData(),$DataSet->GetDataDescription(),150,90,110,PIE_PERCENTAGE,TRUE,50,20,5);  
 			$Test->drawPieLegend(400,15,$DataSet->GetData(),$DataSet->GetDataDescription(),250,250,250);  
 			$imagelink = $contentdir."/uploads/charts/image_".$survey_id."_".$l.".png";
@@ -633,7 +634,7 @@ function voting_function() {
 			$Test->drawRoundedRectangle(5,5,375,195,5,230,230,230);  
 			  
 			// Draw the pie chart  
-			$Test->setFontProperties($contentdir."/plugins/wpdudes_survey/Fonts/tahoma.ttf",8);  
+			$Test->setFontProperties($contentdir."/plugins/wpdudes-survey/Fonts/tahoma.ttf",8);  
 			$Test->drawPieGraph($DataSet->GetData(),$DataSet->GetDataDescription(),150,90,110,PIE_PERCENTAGE,TRUE,50,20,5);  
 			$Test->drawPieLegend(400,15,$DataSet->GetData(),$DataSet->GetDataDescription(),250,250,250);  
 			$imagelink = $contentdir."/uploads/charts/image_".$survey_id.".png";
