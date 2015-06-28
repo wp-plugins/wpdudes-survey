@@ -12,13 +12,13 @@ A voting tool for the members or employees of a group, club, community or organi
 
 == Description ==
 
-WPDudes Survey is a internal feedback tool which helps you to create a Survey/Polls and which gives the voter ability to vote anonymously, that means, no one either the creator of the Survey or Administrator will not have information about who had voted to whom.
+WPDudes Survey is a internal feedback tool which helps you create a Survey or Poll, and gives the voter the ability to vote anonymously. This means no one, neither the creator of the Survey nor the Administrator, will have the information about who voted for whom
 
 Features
 
-* Voters vote Anonymously
-* UNLIMITED Polls/Survey can be created
-* UNLIMITED Users can be added to/for Voter
+* Voters can vote anonymously
+* UNLIMITED Polls/Surveys can be created
+* UNLIMITED Users can be added
 
 == Installation ==
 
@@ -39,21 +39,42 @@ Features
 
 == Frequently Asked Questions ==
 
-= How to create a survey? =
+= How can I create a survey? =
 
-After installing the Plugin, you can see a "WPDudes Survey" in your WordPress Admin panel on the left sidebar menu. Click on that, and click on the "Create Survey Link". Enter the details of the Survey and WoHo you are done!
+After installing the Plugin, you can see a "WPDudes Survey" in your WordPress Admin panel on the left sidebar menu. Click that, and click the "Create Survey Link". Enter the details of the Survey and you're done!
 
-= How to check results of the survey? =
+= How can I check results of the survey? =
 
-To view the results, you have to wait till the appropriated amount of users submitted their feedback. Since this is completely anonymous survey, even admin cannot view results before appropriated percentage of submissions are done.
+To view the results, you have to wait until the appropriated amount of users have submitted their feedback. Since this is a completely anonymous survey, even the admin cannot view the results before the appropriated percentage of submissions is complete.
 
-= How to delete a survey? =
+= How can I delete a survey? =
 
-In order to delete a survey, you just have to click on the big red button named as DELETE on the listing of the surveys.
+In order to delete a survey, just click the big red button called DELETE on the listing of the surveys.
 
-= I don't have wordpress installed, what should I do? =
+= I don't have WordPress installed, what should I do? =
 
-If you don't have wordpress and have a custom script or other CMS installed, either you can install WP and move to WP or you can contact us at support@wpdudes.com and ask for custom version of this plugin to work on your script.
+If you don't have WordPress and have a custom script or other CMS installed, you can either install WP and move to WP, or you can contact us on support@wpdudes.com and ask for a custom version of this plugin to work on your script.
 
+== Screenshots ==
+
+1. Create Survey from Admin Panel
+2. Fill Survey
+3. View Survey from Admin Panel
+4. View Results
+5. View Results Chart
+
+== Changelog ==
+
+= 1.0.4 =
+* Updated FAQ and Added Screenshots
+
+= 1.0.3 =
+* Major Bug Fix
+
+= 1.0.2 =
+* Minor Bug Fix
+
+= 1.0.1 =
+* Minor Bug Fix
 
 
